@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/miEnrollIdentify"
+        android:icon="@drawable/fingerscan_icon"
+        app:showAsAction="ifRoom"
+        android:title="Biometrics">
+    </item>
+    <item
+        android:id="@+id/miImageScan"
+        android:icon="@drawable/finger1scan_icon"
+        app:showAsAction="ifRoom"
+        android:title="Finger capture">
+    </item>
+    <item
+        android:id="@+id/miLogging"
+        android:icon="@drawable/logscreen_icon"
+        app:showAsAction="ifRoom"
+        android:title="LogScreen">
+    </item>
+</menu>

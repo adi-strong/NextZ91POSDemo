@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="title_activity_log">AFYA (Démo d\'application)</string>
+    <string name="title_activity_capture">Capture d\'empreintes digitales</string>
+    <string name="cmd_log_label">Démarrage de l\'application</string>
+
+    <string name="btn_scan_ex">SCAN (BALAYAGE)</string>
+    <string name="btn_scan">SCAN (NUMÉRISATION)</string>
+    <string name="btn_status">ÉTAT</string>
+    <string name="device_state">État de l\'appareil :</string>
+    <string name="scan_status">État de l\'analyse :</string>
+    <string name="scan_in_progress">Numérisation des empreintes digitales…</string>
+    <string name="scan_failed">L\'analyse a échoué. Raison :</string>
+    <string name="scan_start">Appuyez sur SCAN pour démarrer la capture d\'empreintes digitales</string>
+    <string name="device_not_connected">L\'appareil n\'est pas connecté</string>
+    <string name="devices_library_version">Version de la bibliothèque de périphériques :</string>
+    <string name="biometrics_library_version">Version de la bibliothèque biométrique :</string>
+    <string name="device_id">ID de l\'appareil : </string>
+    <string name="device_manufacturer">Fabricant de l\'appareil :</string>
+    <string name="device_model">Modèle d\'appareil :</string>
+    <string name="device_serialnumber">Numéro de série de l\'appareil :</string>
+    <string name="device_firmware_version">Version du micrologiciel de l\'appareil : </string>
+    <string name="device_supported_formats">Formats pris en charge par l\'appareil : </string>
+    <string name="finger_detect_value">Valeur de détection des doigts :</string>
+  <string name="app_name">AFYA</string>
+
+</resources>

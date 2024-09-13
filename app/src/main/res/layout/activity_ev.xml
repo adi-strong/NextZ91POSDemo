@@ -1,0 +1,117 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@android:color/white"
+        android:background="?attr/colorPrimary">
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.nextbiometrics.biometricsamples.CaptureActivity"
+        tools:ignore="HardcodedText,ContentDescription,RtlHardcoded">
+
+        <TextView
+            android:enabled="false"
+            android:id="@+id/device_log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:scrollHorizontally="false"
+            android:text=""
+            android:textSize="21sp" />
+
+        <ImageView
+            android:id="@+id/finger_image"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/device_log"
+            android:layout_marginTop="24dp"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:enabled="false"
+            android:id="@+id/finger_log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/linear_layout"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:scrollHorizontally="false"
+            android:text=""
+            android:textSize="21sp" />
+
+        <LinearLayout
+            android:id="@+id/linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="48dp"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/enrollBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/device_log"
+                android:layout_weight="1"
+                android:text="SCAN (Inscrire)" />
+
+            <Button
+                android:id="@+id/identifyBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="S'authentifier" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout2">
+
+            <Button
+                android:id="@+id/cancelBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Annuler" />
+
+            <Button
+                android:id="@+id/clearDBBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Effacer"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
